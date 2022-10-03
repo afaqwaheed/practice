@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400&family=Rubik+Moonrocks&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 99vh;
+    background-image: url('../images/black.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 100vw;
+    height: 80vh;
+    background-color: rgba(255, 68, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textBox {
+    height: 62vh;
+    width: 49vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    height: 14vh;
+    width: auto;
+    color: white;
+    margin-left: -134px;
+    font-size: 18px;
+    line-height: 37px;
+}
+
+.paragraph {
+    height: 15vh;
+    width: auto;
+    color: white;
+    font-size: 14px;
+}
+
+.form {
+    height: 62vh;
+    width: 49vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    height: 8vh;
+    width: 47vw;
+    color: white;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.mainBox{
+    border: 1px solid white;
+    height: 56vh;
+    width: 47vw;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainBox input{
+    margin: 6px;
+    border-radius: 5px;
+    border:1px solid gray;
+    padding: 9px 0;
+    padding-right: 134px;
+    padding-left: 12px;
+}
+.mainBox input:focus{
+    outline: none;
+}
+.mainBox input::placeholder{
+  color: black;
+}
+.mainBox button{
+    margin: 6px;
+    border-radius: 5px;
+    padding: 9px 126px;
+    background-color:#339c19;
+    color: white;
+    font-weight:500;
+    border: none;
+}
+.mainBox p{
+    color: rgb(92, 87, 87);
+    font-size: 10px;
+}
+.msg{
+    color: rgb(228, 17, 17);
+    align-self: flex-start;
+    margin-left: 102px;
+    position: sticky;
+}
+
+
+

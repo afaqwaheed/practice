@@ -1,0 +1,132 @@
+/* Bottom Slider */
+
+.bottomSlider {
+    position: relative;
+    margin-top: 3rem;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+.bottomSlider .text-btn {
+    position: absolute;
+    top: 27vh;
+    left: 27vw;
+    height: 25vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.bottomSlider .text-btn h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    position: relative;
+}
+
+.findOutBtn {
+margin-top: 2rem;
+
+}
+
+.bottomSlider .text-btn button {
+    padding: 2rem 3rem;
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 600;
+    border-radius: 5rem;
+    border: none;
+    background-color: yellow;
+}
+
+.bottomSlider figure video {
+    width: 100vw;
+    position: relative;
+}
+
+.bottomSlider figure img {
+    width: 100vw;
+    position: relative;
+}
+
+.bottomSlider .swiper-slide {
+    position: relative;
+    width: 100vw;
+    box-sizing: border-box;
+
+}
+
+.bottomSlider .arrows i {
+    color: yellow;
+    font-size: 3.5rem;
+    padding-left: 1rem;
+}
+
+.bottomSlider .arrows {
+    position: absolute;
+    top: 65vh;
+    left: 90vw;
+    box-sizing: border-box;
+}
+
+.bottomSlider .slider-bottom {
+    position: relative;
+    box-sizing: border-box;
+    width: 400vw;
+    transition: all 1s;
+    left: 0;
+    display: flex;
+    animation: bottomSlider 15s infinite;
+    animation-delay: 2s;
+
+
+}
+
+@keyframes bottomSlider {
+    0% {
+        left: 0;
+    }
+
+    10% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    30% {
+        left: -100vw;
+
+
+    }
+
+    45% {
+        left: -100vw;
+
+    }
+
+    60% {
+        left: -200vw;
+
+    }
+
+    75% {
+        left: -200vw;
+
+    }
+
+    90% {
+        left: -200vw;
+
+    }
+
+    90% {
+        left: 0;
+
+    }
+}

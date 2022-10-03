@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+}
+.heading1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+}
+.boxes{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box1{
+    width: 30vw;
+    height: 37vh;
+    margin-left: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-image: url('../images/tiger.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.box2{
+    width: 54.8vw;
+    height: 80vh;
+    margin-right: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 18vw 18vw 18vw;
+    grid-column-gap: 3px;
+    grid-row-gap: 0px;
+   
+}
+
+.tile1 img{
+    object-position:left top;
+    object-fit: none;
+    height:26vh;
+    width:18vw;
+}
+.tile2 img{
+    object-position:center top;
+    object-fit: none;
+    height:26vh;
+    width:18vw;
+
+}
+
+.tile3 img{
+    object-position:right top;
+    object-fit: none;
+    height:26vh;
+    width:18vw;
+}
+
+.tile4 img{
+    object-position:left center;
+    object-fit: none;
+    height:26vh;
+    width:18vw;
+}
+
+.tile5 img{
+    object-position:center center;
+    object-fit: none;
+    height:26vh;
+    width:18vw;
+}
+
+.tile6 img{
+    object-position:right center;
+    object-fit: none;
+    height:26vh;
+    width:18vw;
+}
+
+.tile7 img{
+    object-position:left bottom;
+    object-fit: none;
+    height:26vh;
+    width:18vw;
+}
+
+.tile8 img{
+    object-position:center bottom;
+    object-fit: none;
+    height:26vh;
+    width:18vw;
+  
+}
+
+.tile9 img{
+    position: inherit;
+    height:25vh;
+    width:18vw;
+}
+.timerScoreButton{
+    width:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 210px;
+}
+.btn{
+    padding: 10px 30px;
+    background-color:black;
+    color: white;
+    border-radius: 20px;
+    margin: 0 30px;
+}
+.btn:hover{
+background-color: rgba(240, 74, 13, 0.938);
+transition: 1s;
+}
+
+.timer h3{
+    margin: 0 50px;
+}

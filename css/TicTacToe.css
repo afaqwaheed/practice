@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400&family=Rubik+Moonrocks&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 80vh;
+    width: 100vw;
+    background-color: black
+}
+
+.heading {
+    color: white;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    margin-top: 34px;
+    margin-bottom: 47px;
+}
+
+.mainBox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box1 {
+    width: 29vw;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 80px 80px 80px;
+    grid-gap: 5px;
+    margin-right: -200px;
+}
+
+.box2 {
+    color: white;
+    width: 29vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#reset{
+    padding: 5px 72px;
+    margin-top: 122px;
+    font-size: 22px;
+    border: none;
+    border-radius: 17px;
+}
+#reset:hover{
+    background-color: red;
+    transition: 1s;
+}
+.btn{
+    border: none;
+    font-size: 22px;
+}
+#displayTurn{
+    color: yellow;
+}
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 76px;
+    margin-left: -450px;
+}
+#winner{
+    font-size: 70px;
+    color: red;
+}

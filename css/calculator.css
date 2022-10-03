@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBox {
+    height: 82vh;
+    width: 35vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen {
+    height: 20vh;
+    width: 34vw;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.screen p {
+    height: 18vh;
+    width: 34vw;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    font-size: 24px;
+}
+
+.buttonBox {
+    height: 57vh;
+    width: 34vw;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    margin-top: 24px;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    box-sizing: border-box;
+    padding: 27px 0px 50px 40px;
+}
+
+.buttonBox input {
+    background-color: wheat;
+    font-size: 22px;
+    font-weight: 600;
+    color: #443d3d;
+    border-radius: 10px;
+    border: 2px solid wheat;
+    cursor: pointer;
+
+}
+.buttonBox input:hover{
+    background-color: red;
+    transition: 1s;
+    border: none;
+}
+
+.buttonBox .delBtn {
+    background-color: slategray;
+    border: 2px solid slategray;
+    color: white;
+    font-weight: 800;
+
+}
+
+.resetBtn {
+    grid-column: 1/span 2;
+    height: 55px;
+    border-radius: 9px;
+    border: 2px solid slategray;
+    background-color: slategray;
+    color: white;
+    font-weight: 800;
+    font-size: 23px;
+    cursor: pointer;
+
+}
+.resetBtn:hover{
+    background-color: red;
+    transition: 1s;
+    border: none;
+}
+.equalBtn {
+    width: 173px;
+    height: 55px;
+    border-radius: 9px;
+    border: 2px solid rgb(255, 0, 0);
+    background-color: rgb(255, 1, 1);
+    color: white;
+    font-weight: 800;
+    font-size: 23px;
+    cursor: pointer;
+}
+.equalBtn:hover{
+    background-color: slategray;
+    transition: 1s;
+    border: none;
+}
+
+@media(max-width:1013px) {
+    .buttonBox{
+    grid-template-columns: 65px 65px 65px 65px;
+    padding: 14px 0px 50px 20px
+}
+.resetBtn{
+    height: 40px;
+}
+.equalBtn{
+    width: 142px;
+    height: 40px;
+}
+
+}
+
+@media(max-width:1053px) {
+    .buttonBox{
+    grid-template-columns: 65px 65px 65px 65px;
+    padding: 32px 0px 50px 30px;
+}
+.resetBtn{
+    height: 40px;
+}
+.equalBtn{
+    width: 142px;
+    height: 40px;
+}
+
+}
+
+@media(max-width:375px) {
+    .mainBox {
+        height: 92vh;
+        width: 89vw;
+    }
+
+    .screen {
+        width: 88vw;
+    }
+
+    .buttonBox {
+        height: 68vh;
+        width: 89vw;
+        grid-template-columns: 65px 65px 65px 65px;
+        grid-column-gap: 13px;
+        grid-row-gap: 21px;
+        padding: 51px 0px 0px 18px;
+    }
+
+    .equalBtn {
+        width: 144px;
+    }
+}

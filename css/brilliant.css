@@ -1,0 +1,978 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+header {
+    height: 9.6rem;
+    width: 100%;
+    border: 0.1rem solid black;
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    height: 10rem;
+    margin-left: 2.4rem;
+}
+
+.topBar {
+    height: 3rem;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.topBar ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 1.3rem;
+}
+
+.topBar ul li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.topBar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+}
+
+nav {
+    height: 7rem;
+    background-color: white;
+    border-bottom: 0.2rem solid yellow;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 1.3rem;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0rem 1rem;
+}
+
+#wishlist {
+    background-color: yellow;
+    padding: 1.5rem 3rem;
+    border-radius: 4.3rem;
+}
+
+#searchBox input {
+    display: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: black;
+}
+
+nav ul li a:hover {
+    border-bottom: 0.5rem solid yellow;
+    padding-bottom: 2.5rem;
+}
+
+.nav-icon {
+    position: absolute;
+    font-size: 3.6rem;
+    margin: 0rem 2.6rem;
+    display: none;
+
+}
+
+.fa-x[name="cross"] {
+    display: none;
+}
+
+/* image slider */
+.slider {
+    overflow: hidden;
+}
+
+.slider figure img {
+    width: 100vw;
+}
+
+.slider figure {
+    position: relative;
+    width: 600vw;
+    left: 0rem;
+    animation: slider 25s infinite;
+    animation-delay: 3s;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    15% {
+        left: 0;
+    }
+
+    30% {
+        left: -100vw;
+    }
+
+    45% {
+        left: -200vw;
+    }
+
+    60% {
+        left: -300vw;
+    }
+
+    75% {
+        left: -401vw;
+    }
+
+    90% {
+        left: -401vw;
+    }
+
+    100% {
+        left: 0;
+    }
+
+}
+
+/* text below the slider */
+
+.slider-text {
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.textBox {
+    border-right: 1px solid gray;
+    height: 70vh;
+    width: 18vw;
+    padding: 2rem;
+    box-shadow: 0rem 0.3rem 0rem 0rem rgb(227, 240, 227);
+    box-sizing: border-box;
+}
+
+.textBox:active {
+    border-top: 8px solid yellow;
+}
+
+.textBox h5 {
+    font-size: 1.8rem;
+}
+
+.textBox h6 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding-top: 2rem;
+}
+
+
+
+/* Products Images */
+
+.products {
+    height: 150vh;
+    box-sizing: border-box;
+}
+.imageBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.products img {
+    width: 23vw;
+    padding: 2rem 1rem;
+}
+
+.heading h1 {
+    font-size: 2.5rem;
+    padding-left: 5rem;
+}
+
+.imageRow1 {
+    margin: 5rem 0rem;
+    height: 43vh;
+    display: flex;
+    justify-content: center;
+
+}
+.imageRow1 h2{
+    font-size: 1.9rem;
+    padding: 2rem 1rem;
+}
+
+.imageRow2 h2{
+    font-size: 1.9rem;
+    padding: 2rem 1rem;
+}
+
+.imageRow2 {
+    padding-top: 8rem;
+    height: 43vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5rem;
+}
+
+
+
+
+
+
+/* Mobile and text */
+
+.mobile-text {
+    margin-top: 4rem;
+    box-sizing: border-box;
+}
+
+.mt-Heading {
+    display: flex;
+    justify-content: center;
+    padding: 0rem 25rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.mt-Heading h1 {
+    font-size: 3.4rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.mobileimg {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.mobileimg figure {
+    margin-top: 7rem;
+    height: 90vh;
+    position: relative;
+    display: flex;
+}
+
+.image-Text-Buttons {
+    position: absolute;
+    top: 18vh;
+    left: 56vw;
+    height: 50vh;
+    width: 34vw;
+    box-sizing: border-box;
+}
+
+.h3-head h3 {
+    font-size: 3.4rem;
+}
+
+.h5-head {
+    margin-top: 2rem;
+}
+
+.h5-head h5 {
+    font-size: 1.7rem;
+}
+
+.find-btn {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.find-btn button {
+    padding: 1.7rem 4rem;
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 600;
+    border-radius: 5rem;
+    border: none;
+    background-color: yellow;
+}
+
+.play-google-btn {
+    display: flex;
+}
+
+.play-google-btn button {
+    width: 10vw;
+    border-radius: 1rem;
+    border: none;
+    margin: 0rem 0.6rem;
+    box-sizing: border-box;
+}
+
+.play-google-btn img {
+    width: 9vw;
+}
+
+#mobile-bg-img {
+    width: 100%;
+    height: 80vh;
+}
+
+
+.mobile-img {
+    position: absolute;
+    width: 41vw;
+    height: 88vh;
+    top: -50px;
+    animation: fade-in 5s infinite;
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        top: -40px;
+    }
+
+    to {
+        opacity: 1;
+        top: -50px;
+    }
+}
+
+
+
+
+/* Our Smart Range */
+.smartRange {
+    box-sizing: border-box;
+    margin-bottom: 25rem;
+   
+}
+.smartRange .imageRow1{
+    margin-top: 5rem;
+}
+.smartRange .imageRow2 {
+    margin: 5rem 0rem;
+    height: 43vh;
+    display: flex;
+    justify-content: center;
+    padding-left: 0rem;
+
+}
+.smartRange .imageRow2 h2{
+    font-size: 1.9rem;
+    padding: 2rem 1rem;
+}
+.smartRange .imageRow3 {
+    padding-top: 15rem;
+    height: 43vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5rem;
+}
+.smartRange .imageRow3 h2{
+    font-size: 1.9rem;
+    padding: 2rem 1rem;
+}
+
+.smartRange img {
+    width: 23vw;
+    padding: 0rem 1rem;
+}
+
+.imageRow1 video {
+    width: 23vw;
+    height: 44vh;
+}
+
+.smartRangeHeading h1 {
+    padding-bottom: 4rem;
+    font-size: 3rem;
+    padding-left: 5rem;
+}
+
+
+
+/* Bottom Slider */
+
+.bottomSlider {
+    position: relative;
+    margin-top: 3rem;
+    width: 100%;
+    height: 47rem;
+    overflow-x: hidden;
+    box-sizing: border-box;
+
+}
+
+.bottomSlider .text-btn {
+    position: absolute;
+    top: 17rem;
+    left: 30rem;
+    height: 25vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.bottomSlider .text-btn h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    position: relative;
+}
+
+.findOutBtn {
+    margin-top: 2rem;
+
+}
+
+.bottomSlider .text-btn button {
+    padding: 2rem 3rem;
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 600;
+    border-radius: 5rem;
+    border: none;
+    background-color: yellow;
+}
+
+.bottomSlider figure {
+    position: relative;
+    box-sizing: border-box;
+
+
+}
+
+.bottomSlider figure video {
+    width: 100vw;
+
+}
+
+.bottomSlider figure img {
+    width: 100vw;
+
+}
+
+.bottomSlider .swiper-slide {
+    position: relative;
+    box-sizing: border-box;
+    height: 46rem;
+    width: 100vw;
+
+}
+
+.bottomSlider .arrows i {
+    color: yellow;
+    font-size: 3.5rem;
+    padding-left: 1rem;
+}
+
+.bottomSlider .arrows {
+    position: absolute;
+    top: 40rem;
+    left: 115rem;
+    box-sizing: border-box;
+}
+
+.bottomSlider .slider-bottom {
+    position: relative;
+    box-sizing: border-box;
+    width: 400vw;
+    transition: all 1s;
+    left: 0;
+    display: flex;
+    animation: bottomSlider 15s infinite;
+    animation-delay: 2s;
+
+
+}
+
+@keyframes bottomSlider {
+    0% {
+        left: 0;
+    }
+
+    10% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    30% {
+        left: -100vw;
+
+
+    }
+
+    45% {
+        left: -100vw;
+
+    }
+
+    60% {
+        left: -200vw;
+
+    }
+
+    75% {
+        left: -200vw;
+
+    }
+
+    90% {
+        left: -200vw;
+
+    }
+
+    90% {
+        left: 0;
+
+    }
+}
+
+
+
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 150vh;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.text-container {
+    display: flex;
+    box-sizing: border-box;
+    height: 105vh;
+
+}
+
+.container-div {
+    width: 50vw;
+    height: 79vh;
+    margin: 9rem 2rem;
+    box-sizing: border-box;
+
+}
+
+.container-div div {
+    padding: 1.5rem 0rem;
+}
+
+.container-div img {
+    width: 13vw;
+}
+
+.container-div h1 {
+    color: #949494;
+    font-size: 2.2rem;
+    font-weight: 400;
+    padding: 0rem 0rem;
+    padding-top: 10rem;
+}
+
+.container-div h2 {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0.7rem 0rem;
+
+}
+
+.container-div h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.Nexus-home h1 {
+    padding: 0rem 0rem;
+}
+
+.input-btn-container {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 0rem 11rem;
+
+}
+
+.brilliantUpdates {
+    width: 50vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.brilliantUpdates h1 {
+    color: #949494;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.brilliantUpdates input {
+    padding: 1.7rem 22rem;
+    margin: 3rem 0rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.brilliantUpdates button {
+    padding: 1.4rem 10rem;
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 600;
+    border-radius: 5rem;
+    border: none;
+    background-color: yellow;
+}
+
+.followUs {
+    width: 30vw;
+    height: 20vh;
+}
+
+.followUs h1 {
+    color: #949494;
+    font-size: 2.2rem;
+    font-weight: 400;
+    padding-top: 1rem;
+}
+
+.icons i {
+    color: white;
+    font-size: 2.5rem;
+    padding: 3rem 1rem;
+}
+
+/* Responsive */
+@media (max-width:1264px) {
+    html {
+        font-size: 61%;
+    }
+}
+
+@media (max-width:1220px) {
+    html {
+        font-size: 59%;
+    }
+}
+
+@media (max-width:1177px) {
+    html {
+        font-size: 57%;
+    }
+}
+
+@media (max-width:1115px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width:1135px) {
+    html {
+        font-size: 53%;
+    }
+}
+
+@media (max-width:1064px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width:1064px) {
+    html {
+        font-size: 48%;
+    }
+}
+
+@media (max-width:956px) {
+    html {
+        font-size: 46%;
+    }
+}
+
+@media (max-width:919px) {
+    html {
+        font-size: 44%;
+    }
+}
+
+@media (max-width:878px) {
+    html {
+        font-size: 42%;
+    }
+}
+
+@media (max-width:838px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media (max-width:796px) {
+    html {
+        font-size: 38%;
+    }
+}
+
+@media (max-width:768px) {
+    .nav-icon {
+        display: block;
+        z-index: 2;
+    }
+
+    .nav-ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: white;
+        top: 0rem;
+        left: 200rem;
+        padding: 6rem 3rem;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+
+    nav ul li {
+        padding: 1.1rem 1rem;
+    }
+
+    nav ul li a {
+        font-size: 2rem;
+    }
+
+    header img {
+        position: absolute;
+        height: 9.5rem;
+        margin-left: 2.4rem;
+        z-index: 3;
+    }
+
+    #products {
+        display: none;
+    }
+
+    #solutions {
+        display: none;
+    }
+
+    #support {
+        display: none;
+    }
+
+    #loginSignup {
+        order: 4;
+    }
+
+    #wishlist {
+        order: 6;
+    }
+
+    #searchBox {
+        order: 5;
+    }
+
+    #searchBox i {
+        display: none;
+    }
+
+
+    #searchBox input {
+        display: block;
+        border: 1px solid #848587;
+        height: 11vh;
+        width: 75vw;
+        margin: 1rem 9rem;
+        outline: none;
+    }
+
+    #searchBox input::placeholder {
+        font-size: 1.9rem;
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width:760px) {
+    html {
+        font-size: 36%;
+    }
+}
+
+@media (max-width:716px) {
+    html {
+        font-size: 33%;
+    }
+}
+
+@media (max-width:700px) {
+
+    .slider-text-box {
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .textBox {
+        width: 100vw;
+        height: 26vh;
+    }
+
+    .textBox h5 {
+        font-size: 3rem;
+        padding-top: 2rem;
+    }
+
+    .textBox h6 {
+        font-size: 2rem;
+
+    }
+
+    .slider-text {
+        position: relative;
+        height: 26vh;
+        border: 1px solid #d8d5d5;
+        margin-bottom: 4rem;
+        width: 600vw;
+        animation: textAnim 25s infinite;
+        animation-delay: 3s;
+    }
+
+    @keyframes textAnim {
+        0% {
+            left: 0;
+        }
+
+        15% {
+            left: 0;
+        }
+
+        30% {
+            left: -100vw;
+        }
+
+        45% {
+            left: -200vw;
+        }
+
+        60% {
+            left: -300vw;
+        }
+
+        75% {
+            left: -401vw;
+        }
+
+        90% {
+            left: -401vw;
+        }
+
+        100% {
+            left: 0;
+        }
+
+    }
+
+    .products{
+        height:170vh;
+    }
+    .products img {
+        width: 34vw;
+    }
+
+
+.imageRow1 {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 29rem 29rem;
+    grid-column-gap: 20rem;
+    justify-content: center;
+}
+.smartRange .imageRow1 {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 29rem 29rem;
+    grid-column-gap: 20rem;
+    justify-content: center;
+}
+.smartRange .imageRow2 {
+    margin-top: 39rem;
+    display: grid;
+    grid-template-columns: 29rem 29rem;
+    grid-column-gap: 20rem;
+    justify-content: center;
+}
+.imageRow2 {
+    margin-top: 53rem;
+    display: grid;
+    grid-template-columns: 29rem 29rem;
+    grid-column-gap: 20rem;
+    justify-content: center;
+    padding-left: 0rem;
+}
+.smartRange .imageRow3{
+    margin-top: 23rem;
+    display: grid;
+    grid-template-columns: 29rem 29rem;
+    grid-column-gap: 20rem;
+    justify-content: center;
+    padding-left: 0rem;
+}
+.globe{
+    margin-top: 8rem;
+}
+}
+
+@media (max-width:658px) {
+    html {
+        font-size: 31%;
+    }
+}
+@media (max-width:618px) {
+    html {
+        font-size: 29%;
+    }
+}
+@media (max-width:580px) {
+    html {
+        font-size: 27%;
+    }
+}
+@media (max-width:538px) {
+    html {
+        font-size: 25%;
+    }
+}

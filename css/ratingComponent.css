@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400&family=Rubik+Moonrocks&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 90vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border: 1px solid rgba(15, 14, 14, 0.692);
+    border-radius: 20px;
+    background-color: rgba(15, 14, 14, 0.692);
+    height: 70vh;
+    width: 30vw;
+}
+
+.icon {
+    width: 42px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: rgb(19, 18, 18);
+    box-sizing: border-box;
+    margin: 20px 20px;
+
+
+}
+
+.icon i {
+    width: 100px;
+    color: #f57519;
+    margin-top: 10px;
+    padding-left: 12px;
+
+}
+
+h2 {
+    color: white;
+    padding-left: 20px;
+}
+
+p {
+    color: rgb(189, 170, 170);
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    padding: 19px 26px;
+    margin: 10px 10px;
+    border-radius: 100px;
+    border: none;
+    background-color: rgba(44, 42, 42, 0.733);
+    color: white;
+}
+
+.buttons button:hover {
+    background-color:#f57519 ;
+    transition: 0.9s;
+
+}
+
+.submitBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.submitBtn button {
+    padding: 10px 128px;
+    border: none;
+    border-radius: 100px;
+    background-color: #f57519;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.submitBtn button:hover {
+    background-color: white;
+    color: #f57519;
+    transition: 0.9s
+}
+
+.icon2{
+    font-size: 100px;
+    color: #f57519;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+.heading2{
+    text-align: center;
+}
+.heading2 h3{
+    color: #f57519;
+    background-color: rgba(44, 42, 42, 0.733);
+    margin:0 70px;
+    padding: 6px 0;
+    border-radius: 30px;
+}
+.heading2 h1{
+    color:white;
+    margin: 40px 10px 0;
+  
+}
+.paragraph2 p{
+    text-align: center;
+    color: rgb(189, 170, 170);
+
+}
+
+.inactiveBox2{
+    display: none;
+}
+
+@media (max-width:1400px){
+ .box{
+    height: 80vh;
+ }
+}
+
+@media (max-width:1272px){
+    .buttons button {
+       margin: auto;
+       padding: 10px 10px;
+       
+    }
+    .submitBtn button{
+        margin: auto;
+        padding: 10px 50px;
+    }
+}
+
+@media (max-width:693px){
+    h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:528px){
+    .buttons button {
+        margin: auto;
+        padding: 5px 5px;
+        
+     }
+     .submitBtn button{
+         margin: auto;
+         padding: 10px 20px;
+     }
+}
